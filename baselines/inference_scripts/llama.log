@@ -1,0 +1,66 @@
+2025-03-16 14:18:31.172680: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-03-16 14:18:31.277989: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-03-16 14:18:33.073649: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.45s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.92s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:23<00:07,  7.93s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.49s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.34s/it]
+PAD TOKEN: <|end_of_text|>, PAD TOKEN ID: 128001
+EOS TOKEN: <|end_of_text|>, EOS TOKEN ID: 128001
+128001
+Traceback (most recent call last):
+  File "llama3_1.py", line 128, in <module>
+    responses = query_model_batch(pipeline, system_message, text_input)
+  File "llama3_1.py", line 50, in query_model_batch
+    sequences = pipeline(
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/pipelines/text_generation.py", line 272, in __call__
+    return super().__call__(text_inputs, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/pipelines/base.py", line 1283, in __call__
+    outputs = list(final_iterator)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
+    item = next(self.iterator)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
+    processed = self.infer(item, **self.params)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/pipelines/base.py", line 1209, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/pipelines/text_generation.py", line 370, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/generation/utils.py", line 2215, in generate
+    result = self._sample(
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/generation/utils.py", line 3206, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/models/llama/modeling_llama.py", line 1190, in forward
+    outputs = self.model(
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/models/llama/modeling_llama.py", line 945, in forward
+    layer_outputs = decoder_layer(
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/models/llama/modeling_llama.py", line 673, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/accelerate/hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/transformers/models/llama/modeling_llama.py", line 74, in forward
+    return self.weight * hidden_states.to(input_dtype)
+  File "/home/aswini/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1716, in __getattr__
+    def __getattr__(self, name: str) -> Any:
+KeyboardInterrupt
