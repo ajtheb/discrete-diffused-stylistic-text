@@ -79,7 +79,7 @@ if __name__ == '__main__':
     plt.savefig(f"{leader}_wordcloud.png", dpi=300)
     
     # Generate N-gram counts and plots
-    for n in [1,2, 3,4]:  # Bigrams and Trigrams
+    for n in [1, 2, 3,4]:  # Bigrams and Trigrams
         top_ngrams = get_top_ngrams(text, n, top_k=10)
         print(top_ngrams)
         plot_ngrams(top_ngrams, title=f"Top {n}-grams in {leader} Counterspeech")

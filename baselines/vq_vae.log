@@ -1,0 +1,57 @@
+/home/aswini/miniconda3/envs/myenv/lib/python3.11/site-packages/spacy/pipeline/lemmatizer.py:211: UserWarning: [W108] The rule-based lemmatizer did not find POS annotation for one or more tokens. Check that your pipeline includes components that assign token.pos, typically 'tagger'+'attribute_ruler' or 'morphologizer'.
+  warnings.warn(Warnings.W108)
+/home/aswini/miniconda3/envs/myenv/lib/python3.11/site-packages/spacy/pipeline/lemmatizer.py:211: UserWarning: [W108] The rule-based lemmatizer did not find POS annotation for one or more tokens. Check that your pipeline includes components that assign token.pos, typically 'tagger'+'attribute_ruler' or 'morphologizer'.
+  warnings.warn(Warnings.W108)
+Batch shape: torch.Size([32, 256])
+Sample sequence: tensor([  26,   34,   31,    7,   82,   27,  400,  119,    4,  794, 1972,  525,
+         206,    7,   21,  141,  149,    4, 1972,  525,  592,  868,    6,  263,
+           2,  397,  585,   19,  272,  140,  503,   69,  592,    6,  557,   13,
+           4,  471, 1062,    3, 1266,    6,  935,    3, 1133,    6,  413,    1,
+          15, 2414,    2, 1663,    5,    4,    1,    8,   29,  242,   38, 1493,
+         259, 1402,  953,   59,  122,    5,  140, 2383, 2814,   17,    7,   35,
+          45,   43,   54,   70,   13,   54,   70,   94,  137,  122,  130,    4,
+         120,   18,  124,   11,   21,   25,  161,    6,  518,    3,   96,    2,
+         145,   19,  126,   53,   13,    6,   18,   23,   16,   40,    9,   90,
+          32,   33,    2,   30,   39,    3,   24,  103,  102,   20,   57,    4,
+        1972,  525,  592,    6, 3029, 1215,   15,  794,  225,   52,    8, 1097,
+         372,    5,    4,    1,    3,  812,   19,    4, 1317,    3, 1404,  982,
+           2,  513, 2935,    5, 2172,   11,   21,   82,  153,  840,  225,    2,
+          78,   89,    6,   67,   23,   16,   40,   10,   59,   32, 1044,   33,
+           2,  472,   14,   12,  406,  537,    2,  354,    5,   58,    6,  796,
+           3,   36,    2,   28,    2,    5,   49,    6,   73,   67,   13,   29,
+          61,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0])
+Epoch 1/30, Average Loss: 1057.3876541428917
+Epoch 2/30, Average Loss: 5.472617360569487
+Epoch 3/30, Average Loss: 14.365504399242017
+Epoch 4/30, Average Loss: 14.394212953196275
+Epoch 5/30, Average Loss: 14.003513419388124
+Epoch 6/30, Average Loss: 13.113704354971047
+Epoch 7/30, Average Loss: 12.406347530800224
+Epoch 8/30, Average Loss: 11.486934809076706
+Epoch 9/30, Average Loss: 10.6748342962073
+Epoch 10/30, Average Loss: 9.799946439346211
+Epoch 11/30, Average Loss: 9.198937947318058
+Epoch 12/30, Average Loss: 8.584078023897721
+Epoch 13/30, Average Loss: 7.86817486974217
+Epoch 14/30, Average Loss: 7.372151931660287
+Epoch 15/30, Average Loss: 6.972858278543357
+Epoch 16/30, Average Loss: 6.671026716296304
+Epoch 17/30, Average Loss: 6.4085305233129715
+Epoch 18/30, Average Loss: 6.246528212656111
+Epoch 19/30, Average Loss: 6.042085570777022
+Epoch 20/30, Average Loss: 5.867683397843534
+Epoch 21/30, Average Loss: 5.678126632767236
+Epoch 22/30, Average Loss: 5.576836128362873
+Epoch 23/30, Average Loss: 5.4704105998045645
+Epoch 24/30, Average Loss: 5.371986312354171
+Epoch 25/30, Average Loss: 5.289056013094499
+Epoch 26/30, Average Loss: 5.223877397959664
+Epoch 27/30, Average Loss: 5.1442679526821875
+Epoch 28/30, Average Loss: 5.0808212325076925
+Epoch 29/30, Average Loss: 5.0166073805533795
+Epoch 30/30, Average Loss: 4.962153745177608
