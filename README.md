@@ -1,1 +1,1 @@
-# Person-Specific-Counterspeech-Response
+# Personalised-text-generation using Score Entropy Discrete Diffusion Model(SEDD)
