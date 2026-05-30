@@ -8,8 +8,8 @@ An advanced controllable text generation framework that creates persuasive, unif
 
 ### The Problem
 Online hate speech is a massive, accelerating issue that compromises individual safety and corrupts public discourse. Conventional moderation tactics typically rely on **User Banning** or **Content Removal**. However, these techniques:
-* Suffer from high latency and scaling boundaries.
 * Frequently ignite fierce debates around the preservation of **Freedom of Speech**.
+* Suffer from third person voice, often fail to resonate with people.
 * Do not actively de-escalate underlying conflicts or rehabilitate perpetrators.
 
 ### The Solution: Personalized Counterspeech
